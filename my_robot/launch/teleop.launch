@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<launch>
+  <!-- Keyboard teleop, same as: rosrun teleop_twist_keyboard teleop_twist_keyboard.py -->
+  <!-- output="screen" keeps the node on this terminal so it can read key presses -->
+  <node pkg="teleop_twist_keyboard" type="teleop_twist_keyboard.py" name="teleop_twist_keyboard" output="screen">
+    <remap from="cmd_vel" to="/cmd_vel"/>
+  </node>
+</launch>
